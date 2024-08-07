@@ -1,0 +1,896 @@
+body {
+    margin: 0;
+}
+
+
+.navigation_bar {
+    margin: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0), rgba(245, 245, 245, 1.0));
+}
+
+.BottomOfPage {
+  background: linear-gradient(to bottom, rgba(222, 200, 183, 0.8), rgba(222, 218, 219, 1.0));
+  height: 300px;
+  margin: 0;
+}
+
+.Content-Section {
+  margin: 0;
+  background: #F5F5F5;
+}
+
+
+/*NAV BAR */
+
+.MinSittLogo img {
+  width: 120px; /* Add 'px' for proper CSS syntax */
+  height: auto; /* Add 'px' for proper CSS syntax */
+  margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.MinSittLogo img {
+  width: 120px; /* Add 'px' for proper CSS syntax */
+  height: auto; /* Add 'px' for proper CSS syntax */
+  margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.MinSittLogo img {
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.MinSittLogo:hover img {
+  opacity: 0.7; /* Reduce opacity on hover */
+  cursor: pointer;
+}
+
+.Home a, .Projects a, .About a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Work Sans";
+}
+
+.navigation_bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  height: 50;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px;
+  padding: 4px 30px;
+  position: relative;
+}
+
+.Projects {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #8E7f76;
+}
+
+
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top: 0px;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1.0);
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    right: 0;
+    margin-left: 1000px;
+    border-top: 1px solid black;
+       
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+
+  /*LANDING PAGE */
+
+  .landing-page {
+    font-family: "Work Sans";
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Curiocity_one-liner {
+    font-size: 18px;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+  }
+
+  .ProjectDisclaimer {
+    font-weight: 400;
+  }
+
+  .High-fi-prototypes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #Prototypes img  {
+    width: 800; 
+    height: auto; 
+    padding: 40px;
+    border-radius: 0%;
+  }
+
+  .CuriocityLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CuriocityLogo img {
+    margin-top: 100;
+    width: 400; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius if not needed */
+  }
+
+  /* button */
+
+  .button_area {
+    display: flex;
+    justify-content: center;
+  }
+
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    background-color:rgba(135, 152, 168, 0.5);  /* Blue-ish background color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 44px;
+    cursor: pointer;
+    margin-top: 60px;
+    z-index: 9999;
+  }
+  
+  .scroll-top-btn:hover {
+     transform: translateY(-10px);
+     background-color: rgba(135, 152, 168);
+     transition: transform 0.5s ease
+  }
+
+  .High-Fi-Prototypes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .scroll-top-btn img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* PROJECT DETAILS SECTION */
+
+  .ProjectDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100;
+    gap: 5px; /* Adjust the gap as needed */
+  }
+  
+  .Role, .ProjectType, .Time, .Skills, .Software {
+    max-width: 200;
+  }
+  
+  #ProjectDetailSection {
+    font-family: "Roboto Serif";
+  }
+  
+  #ProjectDetailDescription {
+    font-family: "Work Sans";
+    font-size: 16;
+    line-height: 2.0;
+  }
+  
+  #ProjectDetailDescription {
+    font-family: "Work Sans";
+    font-size: 16;
+    line-height: 2.0;
+  }
+
+  .High-fi-PrototypeSection {
+    margin-top: 100;
+  }
+
+  @media screen and (max-width: 700px) {
+  
+    .ProjectDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .Time {
+      margin-right: 60;
+    }
+
+    .ProjectType {
+      margin-right: 20;
+    }
+
+    .Software {
+      margin-right: 50;
+    }
+    
+    .Skills {
+      margin-right: 10;
+    }
+
+}
+
+/*TITLES & TEXT*/
+
+.ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle {
+  font-family: "Roboto Serif";
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 100;
+  margin-left: 200;
+}
+
+.UpdateSummary {
+  margin-bottom: 100;
+}
+
+.UpdateOnJuly27th {
+  font-family: "Roboto Serif";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 200;
+}
+
+.ContextSummary, .ProblemSummary, .MyRoleSummary, .UpdateSummary {
+font-family: "Work Sans";
+font-weight: 350;
+font-size: 17px;
+width: 70%;
+line-height: 2.0;
+margin-left: 200;
+}
+
+/*OVERVIEW SECTION */
+
+
+/*.Overviews {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 50;
+  }
+
+  .WholeAppWalkthrough {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .WholeWalkthrough video {
+    width: 250;
+    height: auto;
+    justify-content: center;
+    margin: 0;
+  }
+*/
+
+
+.Overviews {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-top: 50;
+}
+
+.ProblemOverviews, .DesignSolutions, .Outcomes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+
+}
+
+
+.ProblemOverviewTitle, .DesignSolutionTitle, .OutcomeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  color: #64516E;
+  font-size: 17px;
+  line-height: 2.0;
+  font-family: "Roboto Serif";
+}
+
+.PSOTitle {
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.PSO {
+  font-family: "Roboto Serif";
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.ProblemOverview, .DesignSolution, .Outcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 10;
+  font-weight: 350;
+  font-size: 17px;
+  line-height: 2.0;
+  font-family: "Work Sans";
+}
+
+.DesignSolution {
+  width: 50%;
+}
+
+.Outcome, .DesignSolution {
+  margin-bottom: 100px;
+}
+
+
+.WholeAppWalkthrough {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100;
+}
+
+.WholeWalkthrough video {
+  width: 250;
+  height: auto;
+  justify-content: center;
+  margin: 0;
+}
+
+
+ .PSOTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1500px) {
+  
+
+.Context, .Problem, .MyRole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContextTitle, .ProblemTitle, .MyRoleTitle {
+    font-family: "Roboto Serif";
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 100;
+    margin-left: 0 !important
+}
+
+.ContextSummary, .ProblemSummary, .MyRoleSummary {
+font-family: "Work Sans";
+font-weight: 350;
+font-size: 17px;
+line-height: 2.0;
+width: 800px;
+margin-left: 0 !important
+}
+}
+
+/*BOTTOM OF THE PAGE */
+
+
+.LetsChat {
+  flex-wrap: wrap;
+  margin-top: 30;
+  
+}
+
+.LetsExplore {
+  flex-wrap: wrap;
+  margin-top: 30;
+
+  
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 30;
+  font-weight: 500;
+  font-family: "Roboto Serif";
+}
+
+.BottomOfPage  a {
+ text-decoration: underline;
+ color: inherit;
+}
+
+.BottomOfPage {
+  font-family: "Work Sans";
+  display: flex;
+  justify-content: column;
+  justify-content: row;
+  justify-content: space-evenly;
+  
+}
+
+.SmilingPic img {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    right: 0;
+    top: 20;
+    border: 1px solid white;
+}
+
+
+/*Animations*/
+
+.hidden {
+  opacity:  0;
+  transform: translateY(30px);
+  transition: all 1s;
+}
+
+.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+
+
+
+@media screen and (max-width: 1200px) and (max-height: 11096.2px) {
+  
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+}
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.ProjectDetails {
+  margin-top: 100;
+}
+
+  .Curiocity_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  #Prototypes img { 
+    width: 500;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    margin-top: 50;
+    justify-content: center;
+  }
+
+.Overviews {
+  margin-bottom: 100px;
+}
+
+  .ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle  {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 10;
+    margin: 0 auto;
+  }
+
+
+  
+  .Context, .Problem, .Updates, .MyRole {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+    font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+    margin: 0 auto;
+    
+
+
+
+  }
+
+  
+  .ProblemOverview, .DesignSolution, .Outcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin-top: 10;
+      font-weight: 350;
+      font-size: 16px;
+      line-height: 2.0;
+      font-family: "Work Sans";
+    }
+  
+
+  .UpdateOnJuly27th {
+    font-size: 18px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+    margin: 0 auto;
+  }
+
+  .UpdateSummary {
+    margin-bottom: 100;
+  }
+
+
+  .navdiv {
+    margin: 0;
+  }
+}
+
+
+
+  @media screen and (min-width: 500px) and (max-width: 770px) {
+
+    .MinSittLogo img {
+      width: 120px; /* Add 'px' for proper CSS syntax */
+      height: auto; /* Add 'px' for proper CSS syntax */
+      margin-left: 30px; /* Add 'px' for proper CSS syntax */
+  }
+  
+  .ProjectDetails {
+    margin-top: 100;
+  }
+  
+    .Curiocity_one-liner {
+      font-size: 15px;
+      width: 85%;
+      margin-right: 0 !important;
+      justify-content: center;
+      margin-left: 0 !important;
+    }
+  
+    #Prototypes img { 
+      width: 500;
+      margin-left: 0 !important;
+      padding: 0 !important;
+      margin-top: 50;
+      justify-content: center;
+    }
+  
+  .Overviews {
+    margin-bottom: 100px;
+  }
+  
+    .ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle  {
+      font-size: 30px;
+      width: 70%;
+      justify-content: center;
+      padding: 10;
+      margin: 0 auto;
+    }
+  
+  
+    
+    .Context, .Problem, .Updates, .MyRole {
+      margin-top: 100;
+    }
+  
+    .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+      font-size: 16px;
+      width: 70%;
+      justify-content: center;
+      padding: 5;
+      margin: 0 auto;
+      
+    }
+  
+    .WholeWalkthrough {
+      width: 500px;
+    }
+    
+    .ProblemOverview, .DesignSolution, .Outcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-top: 10;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 2.0;
+        font-family: "Work Sans";
+      }
+    
+  
+    .UpdateOnJuly27th {
+      font-size: 18px;
+      width: 70%;
+      justify-content: center;
+      padding: 5;
+      margin: 0 auto;
+    }
+  
+    .UpdateSummary {
+      margin-bottom: 100;
+    }
+  
+  
+    .navdiv {
+      margin: 0;
+    }
+  
+
+  .SmilingPic img {
+    width: 150px;
+    height: 150px;
+    padding: 2cqmin;
+    left: 10;
+    border: 1px solid white;
+  }
+
+  .LetsChat, .LetsExplore {
+    font-size: 13;
+    padding: 13;
+  }
+
+  .LetsChatTitle, .ExploreTitle {
+    font-size: 15;
+  }
+
+  .BottomOfPage {
+    height: 200;
+  }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+  .MinSittLogo img {
+    width: 120px; /* Add 'px' for proper CSS syntax */
+    height: auto; /* Add 'px' for proper CSS syntax */
+    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.ProjectDetails {
+  margin-top: 100;
+}
+
+  .Curiocity_one-liner {
+    font-size: 15px;
+    width: 85%;
+    margin-right: 0 !important;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+
+  .PSOTitle {
+    font-size: 20px;
+  }
+
+  #Prototypes img { 
+    width: 300;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    margin-top: 50;
+  }
+
+.Overviews {
+  margin-bottom: 100px;
+}
+
+  .ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle  {
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+    padding: 10;
+    margin: 0 auto;
+  }
+
+
+  
+  .Context, .Problem, .Updates, .MyRole {
+    margin-top: 100;
+  }
+
+  .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+    font-size: 15px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+    margin: 0 auto;
+    
+  }
+
+  .WholeWalkthrough {
+    width: 300px;
+  }
+  
+  .ProblemOverview, .DesignSolution, .Outcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin-top: 10;
+      font-weight: 350;
+      font-size: 15px;
+      line-height: 2.0;
+      font-family: "Work Sans";
+    }
+  
+
+  .UpdateOnJuly27th {
+    font-size: 16px;
+    width: 70%;
+    justify-content: center;
+    padding: 5;
+    margin: 0 auto;
+  }
+
+  .UpdateSummary {
+    margin-bottom: 100;
+  }
+
+
+  .navdiv {
+    margin: 0;
+  }
+
+
+.SmilingPic img {
+  width: 150px;
+  height: 150px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.SmilingPic img {
+  width: 90px;
+  height: 90px;
+  padding: 2cqmin;
+  left: 10;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+.LetsChat, .LetsExplore {
+  font-size: 13;
+  padding: 13;
+}
+
+.LetsChatTitle, .ExploreTitle {
+  font-size: 15;
+}
+
+.BottomOfPage {
+  height: 200;
+}
+
+.CuriocityLogo img {
+  width: 70%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius if not needed */
+}
+
+
+}
+
+  
