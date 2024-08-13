@@ -17,6 +17,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 50;
+  margin-bottom: 100;
 }
 
 .Summary {
@@ -69,13 +70,13 @@
   line-height: 2.0;
   justify-content: center;
   font-family: "Work Sans";
-  margin-left: 20;
+  margin-left: 50;
 }
 
 
 .WholeAppWalkthrough {
   width: 400;
-  margin-top: 30;
+  margin-top: 200;
   margin-bottom: 50;
   margin-left: 100;
   
@@ -243,7 +244,7 @@ body {
 }
 
   .Snackpass_Title {
-    font-family: "Work Sans";
+    font-family: "Roboto Serif";
     font-size: 50px;
     padding: 10px;
     font-weight: bold;
@@ -251,7 +252,7 @@ body {
   }
 
   .Snackpass_one-liner {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     width: 60%;
     text-align: center;
@@ -264,7 +265,7 @@ body {
   }
 
   #Prototypes img  {
-    width: 90%; 
+    width: 1200;
     height: auto; 
     padding: 40px;
     border-radius: 0%;
@@ -292,6 +293,8 @@ body {
     justify-content: center;
     width: 90%;
     margin-left: 200;
+    margin-right: 200;
+    margin-top: 100;
   }
 
 
@@ -299,9 +302,10 @@ body {
   .ContextSummary {
     font-family: "Work Sans";
     font-weight: 350;
-    font-size: 17px;
+    font-size: 20px;
     width: 70%;
     margin-left: 200;
+    margin-right: 200;
     line-height: 2.0;
     display: flex;
     flex-wrap: wrap;
@@ -309,9 +313,11 @@ body {
 
   .SnackSummary {
     font-family: "Work Sans";
-    font-size: 20;
+    font-size: 30;
     width: 70%;
     margin-left: 200;
+    margin-right: 200;
+    font-weight: 250;
     line-height: 2.0;
     display: flex;
     flex-wrap: wrap;
@@ -359,13 +365,14 @@ body {
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
+    margin-right: 200;
     margin-top: 100;
 }
 
 .Quote {
     font-family: "Work Sans";
-    font-weight: 350;
-    font-size: 20px;
+    font-weight: 250;
+    font-size: 30px;
     width: 70%;
     margin-left: 200;
     margin-top: 20;
@@ -404,8 +411,9 @@ body {
     font-weight: 350;
     font-size: 17px;
     width: 75%;
-    margin-left: 200;
+    margin-left: 200px;
     line-height: 2.0;
+    margin-right: 200px;
 }
 
 
@@ -417,6 +425,7 @@ body {
   width: 50%;
   padding: 10;
   margin-left: 250;
+  margin-right: 250;
   line-height: 2.0;
 }
 
@@ -425,6 +434,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   margin-left: 200;
+  margin-right: 200;
   margin-top: 100;
 }
 
@@ -444,6 +454,7 @@ body {
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
+    margin-right: 200;
     margin-top: 100;
 }
 
@@ -465,6 +476,7 @@ body {
   font-size: 30px;
   margin-top: 50;
   margin-left: 200;
+  margin-right: 200;
 }
 
 
@@ -500,6 +512,7 @@ body {
   font-size: 17px;
   width: 70%;
   margin-left: 200;
+  margin-right: 200;
   line-height: 2.0;
 }
 
@@ -520,12 +533,14 @@ body {
   color: black;
   font-size: 17px;
   margin-left: 200;
+  margin-right: 200;
   line-height: 2.0;
   margin-top: 50;
 }
 
 .ReasoningForChickencoop {
   margin-left: 250;
+  margin-right: 250;
   font-family: "Work Sans";
   font-weight: 350;
   font-size: 17px;
@@ -597,6 +612,7 @@ border-radius: 0; /* Remove border radius if not needed */
   display: flex;
   margin-top: 100px;
   margin-left: 200;
+  margin-right: 200;
 }
 
 .FinalResultsText{
@@ -605,6 +621,7 @@ font-weight: 350;
 font-size: 17px;
 width: 70%;
 margin-left: 200;
+margin-right: 200;
 line-height: 2.0;
 }
 
@@ -623,6 +640,7 @@ line-height: 2.0;
   font-size: 40px;
   margin-top: 20;
   margin-left: 200;
+  margin-right: 200;
 }
 
 .ReflectionTextLast{
@@ -631,6 +649,7 @@ line-height: 2.0;
   font-size: 17px;
   width: 70%;
   margin-left: 200;
+  margin-right: 200;
   margin-top: 20;
   margin-bottom: 90;
   padding: 5;
@@ -821,7 +840,7 @@ line-height: 2.0;
   }
 
   .WholeWalkthrough video {
-    width: 250;
+    width: 500;
     height: auto;
     justify-content: center;
     margin: 0;
@@ -842,12 +861,13 @@ line-height: 2.0;
 
 
 
+/*
 @media screen and (min-width: 770px) {
 
   .MinSittLogo img {
-    width: 120px; /* Add 'px' for proper CSS syntax */
-    height: auto; /* Add 'px' for proper CSS syntax */
-    margin-left: 30px; /* Add 'px' for proper CSS syntax */
+    width: 120px; 
+    height: auto; 
+    margin-left: 30px; 
 }
 
   .Snackpass_Title {
@@ -859,13 +879,6 @@ line-height: 2.0;
     margin-top: 100;
   }
 
-  .Snackpass_one-liner {
-    font-size: 15px;
-    width: 85%;
-    margin-right: 0 !important;
-    justify-content: center;
-    margin-left: 0 !important;
-  }
 
   #Prototypes img{
     width: 100%;
@@ -915,8 +928,6 @@ line-height: 2.0;
       margin-left: 0;
     }
   
-
-
   .Summary {
     margin-right: 0;
     margin-left: 0;
@@ -1036,6 +1047,7 @@ line-height: 2.0;
     margin: 0;
   }
 }
+*/
 
 @media screen and (min-width: 500px) and (max-width: 769px) {
     
