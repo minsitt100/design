@@ -189,7 +189,7 @@ body {
 }
 
 .Intro {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   width: 600px;
   line-height: 1.5;
@@ -245,7 +245,7 @@ body {
 }
 
 .ProjectOverview {
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-size: 40px;
   font-weight: 300; /* Sets a black border with 2px width around the <ul> element */
   padding: 10px;
@@ -279,6 +279,7 @@ body {
   font-weight: 300;
   line-height: 2.0;
   margin-left: 50;
+  margin-right: 150;
 }
 
 .SnackpassTitle {
@@ -290,6 +291,7 @@ body {
   font-weight: 300;
   line-height: 2.0;
   margin-left: 50;
+  margin-right: 150;
 }
 
 #Ecobear_showcase_picture {
@@ -308,6 +310,7 @@ body {
   font-weight: 300;
   line-height: 2.0;
   margin-left: 50;
+  margin-right: 150;
 }
 
 
