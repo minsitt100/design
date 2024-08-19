@@ -189,7 +189,7 @@ body {
 }
 
 .Intro {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   width: 600px;
   line-height: 1.5;
@@ -246,13 +246,13 @@ body {
 
 .ProjectOverview {
   font-family: "Roboto Serif";
-  font-size: 40px;
+  font-size: 70px;
   font-weight: 300; /* Sets a black border with 2px width around the <ul> element */
   padding: 10px;
   line-height: 10px;
   display: flex;
   justify-content: center;
-  width: 500px;
+  width: 1200px;
 }
 
 /*Porject Sections*/
@@ -260,6 +260,7 @@ body {
 .PortfolioWebsite {
   margin-bottom: 100px;
 }
+
 
 .Snackpass, .PortfolioWebsite {
   width: 100%;
@@ -401,8 +402,8 @@ body {
 }
 
 .SnackpassTitle {
-  font-weight: bold;
   font-size: 30px;
+  font-weight: bold;
   padding: 0px;
   color: #04BCFC
 }
