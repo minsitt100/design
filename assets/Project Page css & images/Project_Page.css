@@ -152,12 +152,12 @@ body {
 
 
 .SectionTitle {
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
-  font-family: "Work Sans";
-  font-weight: 200;
+  font-family: "Roboto Serif";
+  font-weight: 500;
   padding: 10
 }
 
@@ -166,7 +166,7 @@ body {
   margin: 0 auto;
   width: 60%;
   text-align: center;
-  font-family: "Work Sans";
+  font-family: "Roboto Serif";
   font-weight: 300;
   padding: 10;
   line-height: 2.0;
@@ -189,6 +189,12 @@ body {
   max-width: 150px; /* Adjust the max-width as needed */
   height: auto;
   border-radius: 50%;
+}
+
+#DesignProjectPictureCuriocity img{
+  max-width: 150px;
+  height: auto;
+
 }
 
 #DesignProjectPictureEcobear img {
@@ -355,7 +361,7 @@ body {
   opacity: 1;
 }
 
-#DesignProjectPicture img:hover, .BusProjectPictureVuori img:hover, .BusProjectPictureCalRecycle img:hover, 
+#DesignProjectPicture img:hover, #DesignProjectPictureCuriocity img:hover, .BusProjectPictureVuori img:hover, .BusProjectPictureCalRecycle img:hover, 
 #BusProjectPicture img:hover, .BusProjectPictureASRB img:hover {
   transition: transform 0.3s ease;
   transform: translateY(-10px);
