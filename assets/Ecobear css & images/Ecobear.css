@@ -337,15 +337,29 @@ body {
     justify-content: center;
     width: 90%;
     margin-left: 200;
+    margin-right: 200;
     margin-top: 100;
   }
 
-  .ContextSummary, .DesignathonPrompt {
+  .ContextSummary {
     font-family: "Work Sans";
     font-weight: 350;
     font-size: 17px;
     width: 70%;
     margin-left: 200;
+    margin-right: 200;
+    line-height: 2.0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .DesignathonPrompt {
+    font-family: "Work Sans";
+    font-weight: 350;
+    font-size: 25px;
+    width: 70%;
+    margin-left: 200;
+    margin-right: 200;
     line-height: 2.0;
     display: flex;
     flex-wrap: wrap;
@@ -376,6 +390,7 @@ body {
     font-weight: bold;
     font-size: 40px;
     margin-left: 200;
+    margin-right: 200;
     margin-top: 100;
 }
 
@@ -411,7 +426,7 @@ body {
 .MissionStatementFull {
     font-family: "Work Sans";
     font-weight: 350;
-    font-size: 20px;
+    font-size: 25px;
     width: 70%;
     margin-left: 200;
     line-height: 1.5;

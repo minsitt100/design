@@ -197,6 +197,9 @@ body {
   animation: fade-up 1s;
 }
 
+.highlighted_words {
+  font-size: 25px;
+}
 
 /* Scroll-to-top-button */
 
@@ -530,7 +533,7 @@ body {
 
   #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
     width: 500;
-    margin-left: 50px;
+    margin: 0 auto;
   }
 
 
@@ -551,22 +554,33 @@ body {
   }
 
   .MyName {
-    font-size: 65px;
+    font-size: 55px;
   }
   
-  .Major {
+  .highlighted_words {
+    font-size: 20;
+  }
+
+  .Major.fade-up {
     font-size: 14px;
     font-weight: 300;
+  }
+
+  .Snackpass, .PortfolioWebsite, .Ecobear {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   
 
   #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
     width: 550px;
-    margin-left: 70px;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   #Ecobear_showcase_picture {
-    margin: 0;
+    margin: 0 auto;
   }
 
   #Snackpass_showcase_picture img, #PortfolioWebsite_showcase_picture img, #Ecobear_showcase_picture img {
@@ -575,20 +589,30 @@ body {
     margin: 0 auto;
   }
 
-  .Snackpass, .PortfolioWebsite, .Ecobear {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+  .Landing_Page {
+    height: 700 !important;
   }
    
 }
    
 @media screen and (min-width: 700px) and (max-width: 808px) {
 
+  .Landing_Page {
+    height: 700 !important;
+  }
+
+  .middle_section {
+    margin-bottom: 300;
+  }
+
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
     height: auto; /* Add 'px' for proper CSS syntax */
     margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.highlighted_words {
+  font-size: 22;
 }
 
 
@@ -598,9 +622,9 @@ body {
     margin-top: 0;
   }
   
-  .Major {
+  .Major.fade-up{
     width: 400px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
   }
 
@@ -644,21 +668,16 @@ body {
   font-size: 15px;
 }
 
-.Major {
-  width: 500px;
-  font-size: 15px;
-  font-weight: 300;
-}
 
 
 #Ecobear_project_text, #PortfolioWebsite_project_text, #Snackpass_project_text {
   width: 450px;
-  margin-left: 50;
+  margin: 0 auto;
 }
 
 #PortfolioWebsite_project_text {
   width: 500px;
-  margin-left: 50;
+  margin: 0 auto;
 }
 
 .Snackpass, .PortfolioWebsite, .Ecobear {
@@ -684,6 +703,10 @@ body {
     width: 400px;
     font-size: 40px;
     margin-top: 0;
+  }
+
+  .highlighted_words {
+    font-size: 20px;
   }
   
   .Major {
@@ -790,10 +813,18 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
 
+  .Landing_Page {
+    height: 700 !important;
+  }
+
   .MinSittLogo img {
     width: 120px; /* Add 'px' for proper CSS syntax */
     height: auto; /* Add 'px' for proper CSS syntax */
     margin-left: 30px; /* Add 'px' for proper CSS syntax */
+}
+
+.highlighted_words {
+  font-size: 18px;
 }
 
   .MyName {
@@ -802,7 +833,7 @@ body {
     margin-top: 0;
   }
   
-  .Major {
+  .Major.Major.fade-up {
     width: 250px;
     font-size: 10px;
     font-weight: 300;
@@ -852,7 +883,7 @@ body {
 }
 
   .ProjectOverview {
-    font-size: 25px;
+    font-size: 20px;
     width: 300px;
   }
 
