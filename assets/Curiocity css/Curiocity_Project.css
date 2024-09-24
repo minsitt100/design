@@ -242,10 +242,19 @@ body {
   .ProjectDetails {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin-bottom: 100;
-    gap: 5px; /* Adjust the gap as needed */
+    gap: 20px; /* Adjust the gap as needed */
+    max-width: 50%;
   }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */           /* Make the wrapper fill the full viewport height */
+}
+
+
+
   
   .Role, .ProjectType, .Time, .Skills, .Software {
     max-width: 200;
@@ -278,23 +287,18 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    
-    .Time {
-      margin-right: 60;
+      gap: 20px;
+      max-width: 50%;
     }
 
-    .ProjectType {
-      margin-right: 20;
-    }
-
-    .Software {
-      margin-right: 50;
-    }
+    .wrapper {
+      display: flex;
+      justify-content: center;  /* Centers the content horizontally */
+      align-items: center;      /* Centers the content vertically */           /* Make the wrapper fill the full viewport height */
+  }
+  
     
-    .Skills {
-      margin-right: 10;
-    }
+   
 
 }
 
@@ -476,31 +480,48 @@ margin-left: 200;
 }
 
 @media screen and (min-width: 1500px) {
-  
 
-.Context, .Problem, .InitialExplorationsResearch, .MidFidelityDesigns, .MoreUserInterviews, .Iteration, .TransitiontoWebflow, .Reflection {
+
+.ProjectDetails {
+  display: flex;
+  max-width: 50%;
+  gap: 10;
+}
+
+.Context, .Problem, .InitialExplorationsResearch, .MidFidelityDesigns, .MoreUserInterviews, 
+.Iteration, .TransitiontoWebflow, .Reflection, .Overviews{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 
-.ContextTitle, .ProblemTitle, .MyRoleTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle, .IterationTitle, .WebFlowTitle
+.ContextTitle, .ProblemTitle, .MyRoleTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle, .IterationTitle, .WebFlowTitle,
 .ReflectionTitle {
     font-family: "Roboto Serif";
     font-weight: bold;
     font-size: 40px;
     margin-top: 100;
-    margin-left: 0 !important
+    max-width: 30%;
 }
 
-.ContextSummary, .ProblemSummary, .MyRoleSummary, .ResearchSummarym .MidFidelitySummary, .UserInterviewsSummary, .IterationSummary, 
+.ContextSummary, .ProblemSummary, .MyRoleSummary, .ResearchSummary, .MidFidelitySummary, .UserInterviewsSummary, .IterationSummary, 
 .WebFlowSummary, .ReflectionSummary {
 font-family: "Work Sans";
 font-weight: 350;
 font-size: 18px;
 line-height: 2.0;
-width: 800px;
+max-width: 30%;
 margin-left: 0 !important
+}
+
+.bullet-list {
+  list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
+ /* Adjust margin as needed */
+  font-family: "Work Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 }
 
@@ -619,12 +640,14 @@ margin-left: 0 !important
   margin-bottom: 100px;
 }
 
-.ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle  {
+.ContextTitle, .ProblemTitle, .MyRoleTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle, .IterationTitle, .WebFlowTitle,
+.ReflectionTitle  {
     font-size: 30px;
     width: 70%;
     justify-content: center;
     padding: 10;
     margin: 0 auto;
+    margin-top: 100px;
   }
 
 
@@ -633,7 +656,9 @@ margin-left: 0 !important
     margin-top: 100;
   }
 
-  .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+
+  .ContextSummary, .ProblemSummary, .MyRoleSummary, .ResearchSummary, .MidFidelitySummary, .UserInterviewsSummary, .IterationSummary, 
+  .WebFlowSummary, .ReflectionSummary  {
     font-size: 16px;
     width: 70%;
     justify-content: center;
@@ -711,7 +736,8 @@ margin-left: 0 !important
     margin-bottom: 100px;
   }
   
-  .ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle  {
+  .ContextTitle, .ProblemTitle, .MyRoleTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle, .IterationTitle, .WebFlowTitle,
+  .ReflectionTitle  {
       font-size: 30px;
       width: 70%;
       justify-content: center;
@@ -725,7 +751,8 @@ margin-left: 0 !important
       margin-top: 100;
     }
   
-    .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+    .ContextSummary, .ProblemSummary, .MyRoleSummary, .ResearchSummary, .MidFidelitySummary, .UserInterviewsSummary, .IterationSummary, 
+    .WebFlowSummary, .ReflectionSummary {
       font-size: 16px;
       width: 70%;
       justify-content: center;
@@ -789,7 +816,10 @@ margin-left: 0 !important
   .BottomOfPage {
     height: 200;
   }
-
+  
+  .WireframeImage img {
+    width: 500px;
+  }
 }
 
 
@@ -829,7 +859,8 @@ margin-left: 0 !important
   margin-bottom: 100px;
 }
 
-.ContextTitle, .ProblemTitle, .MyRoleTitle, .UpdatesTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle   {
+.ContextTitle, .ProblemTitle, .MyRoleTitle, .ResearchTitle, .MidFidelityTitle, .UserInterviewsTitle, .IterationTitle, .WebFlowTitle,
+.ReflectionTitle    {
     font-size: 30px;
     width: 70%;
     justify-content: center;
@@ -839,11 +870,13 @@ margin-left: 0 !important
 
 
   
-  .Context, .Problem, .Updates, .MyRole {
-    margin-top: 100;
+  .Context, .Problem, .InitialExplorationsResearch, .MidFidelityDesigns, .MoreUserInterviews, 
+.Iteration, .TransitiontoWebflow, .Reflection {
+    margin-top: 200;
   }
 
-  .ContextSummary, .ProblemSummary, .UpdateSummary, .MyRoleSummary {
+  .ContextSummary, .ProblemSummary, .MyRoleSummary, .ResearchSummary, .MidFidelitySummary, .UserInterviewsSummary, .IterationSummary, 
+  .WebFlowSummary, .ReflectionSummary  {
     font-size: 15px;
     width: 70%;
     justify-content: center;
@@ -932,6 +965,9 @@ margin-left: 0 !important
   border-radius: 0; /* Remove border radius if not needed */
 }
 
+.WireframeImage img {
+  width: 300px;
+}
 
 }
 

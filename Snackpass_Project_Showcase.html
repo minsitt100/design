@@ -48,6 +48,7 @@
           </div>
         </div>
       </div>
+    <div class ="wrapper">
      <div class = "ProjectDetails hidden">
           <div class = "Role">
             <p id = ProjectDetailSection><strong style="color: #04BCFC;">Role:</strong></p>
@@ -72,6 +73,7 @@
             <p id = ProjectDetailDescription>Product Design</p>
             <p id = ProjectDetailDescription>UX Research</p>
           </div>
+      </div>
     </div>
     <hr>
       <div class = "PSOTitle">
@@ -105,8 +107,8 @@
         </div>
       </div>
     <hr>
-      <div class = "Context"> 
-        <p class = "ContextTitle">So.. What is Snackpass?</p>
+      <div class = "ProblemStatement"> 
+        <p class = "ProblemStatementTitle">So.. What is Snackpass?</p>
         <p class = "SnackSummary"> Snackpass is a  social food-pick-up app aimed at university students.</p>
 
         <p class = "ContextSummary">Users can order ahead for pickup, earn loyalty points for discounts, and gift friends directly through the app. It features exclusive discounts, an activity feed to track friends’ orders and gifts, 
@@ -139,31 +141,29 @@
         <p class = "ValidationSummary">Below are some main statistics and comments regarding user gifting behavior and the reward system:</p>
         <div class = "Statistics">
           <ul class ="bullet-list">
-            <li class = "StatisticsLine"><strong style="color: #04BCFC">58.1%</strong>
+            <li class = "list-item StatisticsLine"><strong style="color: #04BCFC">58.1%</strong>
               of users said they would want points from friends for a few specific stores they frequent.</li>
-            <li class = "StatisticsLine"><strong style="color: #04BCFC;">66.7%</strong>
+            <li class = "list-item StatisticsLine"><strong style="color: #04BCFC;">66.7%</strong>
               of users said Snackpass only feels slightly social. </li>
-            <li class = "StatisticsLine"><strong style="color: #04BCFC;">73.8%</strong>
+            <li class = "list-item StatisticsLine"><strong style="color: #04BCFC;">73.8%</strong>
               of users said they rarely use the Chicken Coop feature and see no benefit to it. </li>
           </ul>
       </div>
        <p class = "ValidationSummary">From these statistics, I had the following takeaways to guide my solutions:</p>
-        <div class = "Takeaways"> 
+        <div class = "Statistics"> 
           <ul class="bullet-list">
-            <li class="StatisticsLine">Users prefer earning points from specific stores and like making progress towards them.</li>
-            <li class="StatisticsLine">They want a more attainable rewards system.</li>
-            <li class="StatisticsLine">Opportunities exist to use gamification features to improve engagement.</li>
-            <li class="StatisticsLine">Update the Chicken Coop feature to be relevant to core functionality of the app: food-delivery and rewards.</li>
+            <li class ="list-item StatisticsLine">Users prefer earning points from specific stores and like making progress towards them.</li>
+            <li class ="list-item StatisticsLine">They want a more attainable rewards system.</li>
+            <li class="list-item StatisticsLine">Opportunities exist to use gamification features to improve engagement.</li>
+            <li class="list-item StatisticsLine">Update the Chicken Coop feature to be relevant to core functionality of the app: food-delivery and rewards.</li>
           </ul>
         </div>
     </div>
     <div class = "SolutionsProcess">
-        <div class ="SolutionsIntro">
           <p class = "SolutionsProcessTitle">
             The user surveys provided me the foundation to begin wireframing solutions.</p>
           <p class = "SolutionsTextIntro">With the takeaways in mind, I went on to wire-frame solutions that aimed to solve 
             the pain-points I discovered. This lead me to three components of the project: <strong style="color: #04BCFC;">Favorite Store, Leaderboards, Redesigning Chicken Coop.</strong></p>
-          </div>
         <div class = "FavoriteStoreFeature">
           <p class = "FavoriteStoreFeatureTitle">
             Favorite Store Wireframes
@@ -178,7 +178,7 @@
                <img src = "assets/Snackpass css & images/Screenshot 2024-06-16 at 4.28.42 PM.png"> 
         </div>
       
-        <div class = "FavStoreExplaination">
+      <div class = "FavStoreExplaination">
               <p class = "StrategicReasoning">
                 Strategic Reasoning:
               </p>
@@ -220,7 +220,7 @@
               <div class = "High-Fi-Prototype-Fav-Store">
                 <img src = "assets/Snackpass css & images/Group 22.png">
               </div>
-        </div>
+      </div>
       </div>
       <div class = "LeaderboardFeature">
         <p class = "LeaderboardTitle">
@@ -291,21 +291,14 @@
           <p class = "ChickencoopText">Thus, the following solutions were ideated:</p>
           <p class = "ChickencoopText">1. Link the "Favorite Store" feature to "Chicken Coop" by providing extra progress to hatching chicks if a 
               user gives the points to their friends favorite store.</p>
-              <ul class="bullet-list">
-                 <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC">WHY:</strong> The feature would be conntected to a core function of the app: ordering and delivering.</li>
-              </ul>
-         <p class = "ChickencoopText">2. A new gift-card system called  <strong style ="color: #04BCFC">SnackCards</strong> that allows users to convert coins 
+          <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC">WHY:</strong> The feature would be connected to a core function of the app: ordering and delivering.</li>
+          <p class = "ChickencoopText">2. A new gift-card system called SnackCards that allows users to convert coins 
               collected from chickens into free rewards and discounts.</p>
-            <ul class="bullet-list">
-                <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC">WHY:</strong> As the currency can only be gained by interacting 
-                  with the feature, users are incetivized to use it 
-                  if they want another method to obtain rewards.</li>
-            </ul>
+          <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC">WHY:</strong> As the currency can only be gained by interacting 
+                  with the feature, users are incetivized to use it if they want another method to obtain rewards.</li>
           <p class = "ChickencoopText">3. Leaderboards will have a category for the chicken coop feature such as most chickens hatched. 
-            <ul class="bullet-list">
-              <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC"> WHY:</strong> To allow users to be recognized for interacting and engaging with the app (since chickens are hatched through orders and gifting through Snackpass) and act as incetives for 
+          <li class ="ReasoningForChickenCoop"><strong style="color:#04BCFC"> WHY:</strong> To allow users to be recognized for interacting and engaging with the app (since chickens are hatched through orders and gifting through Snackpass) and act as incetives for 
               users that are competitive.</li>
-            </ul>
           <p class = "DesginJustification">
             Design Choices:
           </p>

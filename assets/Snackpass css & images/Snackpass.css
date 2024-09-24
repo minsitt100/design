@@ -438,10 +438,15 @@ body {
   margin-top: 100;
 }
 
+
+
 .bullet-list {
   list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
-  margin-left: 20px; /* Adjust margin as needed */
+  margin-left: 20px;
+  margin-right: 70px; /* Adjust margin as needed */
+  font-family: "Work Sans";
 }
+
 .list-item {
   margin-bottom: 10px; /* Adjust margin as needed */
   padding-left: 20px; /* Adjust padding to increase space between bullets */
@@ -775,18 +780,20 @@ line-height: 2.0;
   opacity: 1;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;  /* Centers the content horizontally */
+  align-items: center;      /* Centers the content vertically */           /* Make the wrapper fill the full viewport height */
+}
+
 .ProjectDetails {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   margin-bottom: 100;
-  gap: 5px; /* Adjust the gap as needed */
+  gap: 20px; /* Adjust the gap as needed */
+  max-width: 50%;
 }
 
-.Role, .ProjectType, .Time, .Skills, .Software {
-  max-width: 200;
-}
 
 #ProjectDetailSection {
   font-family: "Roboto Serif";
@@ -795,6 +802,92 @@ line-height: 2.0;
 #ProjectDetailDescription {
   font-family: "Work Sans";
   font-size: 16;
+}
+
+@media screen and (min-width: 1700px) {
+
+
+  .ProjectDetails {
+    display: flex;
+    max-width: 50%;
+    justify-content: space-evenly;
+  }
+  
+  .Context, .ProblemStatement, .Validation, .SolutionsProcess, .SolutionsIntro .FinalResults, .FinalSectionTextStuff, .Reflection, .LeaderboardFeature, .LeaderboardExplaination,
+   .FavStoreExplaination, .FavoriteStoreFeature, .Statistics,
+  .ChickencoopFeature, .ChickenCoopExplaination {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+  }
+
+  .Quote, .SnackSummary {
+    font-family: "Work Sans";
+    font-weight: 250;
+    font-size: 30px;
+    max-width: 30%;
+    margin-top: 20;
+    line-height: 2.0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+
+  .ContextTitle, .ProblemStatementTitle, .ValidationTitle, .SolutionsProcessTitle,
+  .ReflectionTitle, .FinalResultsTitle {
+      font-family: "Roboto Serif";
+      font-weight: bold;
+      font-size: 40px;
+      margin-top: 100;
+      max-width: 30%;
+  }
+
+  .bullet-list {
+    list-style-type: disc; /* Use 'disc' for filled circles or 'circle' for empty circles */
+   /* Adjust margin as needed */
+    font-family: "Work Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+
+  .ReasoningForChickencoop {
+    max-width: 50%;
+  }
+
+
+
+  .StrategicReasoning, .DesginJustification {
+    margin: 0 auto;
+    padding: 30;
+  }
+
+  .FavoriteStoreFeatureTitle, .LeaderboardTitle, .ReflectionTitle, .ChickencoopTitle {
+    font-family: "Roboto Serif";
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 100;
+    align-items: center;
+    max-width: 30%;
+  }
+
+
+  
+  .ContextSummary, .SummaryOfProblem, .ValidationSummary, 
+  .SolutionsTextIntro, .FavStoreText, .LeaderboardText, .ChickencoopText, 
+  .ReflectionText, .FinalResultsText, .ReasoningForChickencoop{
+  font-family: "Work Sans";
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 2.0;
+  max-width: 30%;
+  align-items: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  }
 }
 
 @media screen and (max-width: 700px) {
